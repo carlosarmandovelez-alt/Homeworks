@@ -1,9 +1,5 @@
-// ============================================
-// 📚 FUNCIONES PAR/IMPAR
-// Homework - Regular vs Arrow Functions
-// ============================================
 
-// 1. REGULAR FUNCTION
+//  FUNCION REGULAR 
 function esParRegular(numero) {
     if (numero % 2 === 0) {
         console.log(`${numero} es PAR`);
@@ -12,7 +8,7 @@ function esParRegular(numero) {
     }
 }
 
-// 2. ARROW FUNCTION
+// FUNCION ARROW
 const esParArrow = (numero) => {
     if (numero % 2 === 0) {
         console.log(`${numero} es PAR`);
@@ -21,9 +17,7 @@ const esParArrow = (numero) => {
     }
 };
 
-// ============================================
 // PRUEBAS
-// ============================================
 
 console.log('--- Regular Function ---');
 esParRegular(4);  // 4 es PAR
