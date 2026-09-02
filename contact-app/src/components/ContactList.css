@@ -1,0 +1,37 @@
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.contact-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contact-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.contact-list::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 4px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #999;
+}
+
+.empty-state p {
+  font-size: 1.2rem;
+}
+
+.empty-subtext {
+  font-size: 0.9rem;
+  color: #bbb;
+}
