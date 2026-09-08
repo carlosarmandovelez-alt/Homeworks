@@ -1,0 +1,90 @@
+export const songs = [
+    'Save me - Aimee Mann',
+    'American Wedding - Frank Ocean',
+    'Pretty When You Cry - Lana Del rey',
+    'Dunno - Mac Miller',
+    'Congratulations - Mac Miller',
+    'Runaway - Kanye West ',
+    'Cant Tell Me Nothing - Kanye West',
+    'One - Aimee Mann',
+    'Wise up - Aimee Mann',
+    'Slow Dance - Clairo',
+    'Circles - Post Malone',
+    'deja vu - Olivia Rodrigo',
+    'Benz Truck - Lil Peep',
+    'Violent Crimes - Kanye West',
+    'Ghost Town - Kanye West',
+    '505 - Artic Monkeys',
+    'Les - Childish Gambino',
+    'Thats Life - Frank Sinatra',
+    'Sundress - A$AP Rocky',
+    'Love me - Lil Wayne',
+    "White Ferrari - Frank Ocean"
+];
+
+
+export const webPages = [
+    'https://www.google.com',
+    'https://www.youtube.com',
+    'https://github.com',
+    'https://x.com',
+    'https://batcave.biz',
+    'https://www.canva.com',
+    'https://www.gmail.com',
+    'https://campus.uaovirtual.edu.co/login/index.php',
+    'https://open.spotify.com/intl-es',
+    'https://www.instagram.com',
+    'https://www.facebook.com/', 
+    'https://www.netflix.com/co/',
+    'https://1hd.one/',
+    'https://fmhy.net/video'
+];
+
+
+export const songNames = [
+    'Save me',
+    'American Wedding',
+    'Pretty When You Cry',
+    'Dunno',
+    'Congratulations',
+    'Runaway',
+    'Cant Tell Me Nothing',
+    'One',
+    'Wise up',
+    'Slow Dance',
+    'Circles',
+    'deja vu',
+    'Benz Truck',
+    'Violent Crimes',
+    'Ghost Town',
+    '505',
+    'Les',
+    'Thats Life',
+    'Sundress',
+    'Love me',
+    "White Ferrari"
+];
+
+export const artists = [
+    'Aimee Mann',
+    'Frank Ocean',
+    'Lana Del rey',
+    'Mac Miller',
+    'Mac Miller',
+    'Kanye West',
+    'Kanye West',
+    'Aimee Mann',
+    'Aimee Mann' , 
+    'Clairo',
+    'Post Malone',
+    'Olivia Rodrigo',
+    'Lil Peep',
+    'Kanye West',
+    'Kanye West',
+    'Artic Monkeys',
+    'Childish Gambino',
+    'Frank Sinatra',
+    'A$AP Rocky',
+    'Lil Wayne',
+    "Frank Ocean"
+];

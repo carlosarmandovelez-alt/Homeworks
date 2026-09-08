@@ -1,0 +1,346 @@
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ===== HOME PAGE ===== */
+.home-page .hero {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 16px;
+    margin-bottom: 40px;
+}
+
+.home-page .hero h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.home-page .hero h2 {
+    font-size: 1.8rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.home-page .hero .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.info-card .card-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.info-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.card-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: transform 0.2s;
+}
+
+.card-btn:hover {
+    transform: scale(1.05);
+}
+
+.info-box {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+}
+
+.info-box h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.info-box ul li {
+    padding: 8px 0;
+    color: #555;
+}
+
+/* ===== MUSIC PLAYER ===== */
+.music-player .page-subtitle,
+.browser-history .page-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.player-container,
+.browser-container {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.current-song,
+.current-page {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.song-icon,
+.page-icon {
+    font-size: 2.5rem;
+}
+
+.song-info h3,
+.page-info h3 {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.song-title,
+.page-url {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.song-position,
+.page-position {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.player-controls,
+.browser-controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.control-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: #e9ecef;
+    color: #333;
+}
+
+.control-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.control-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.play-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.danger-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.add-btn {
+    background: #28a745;
+    color: white;
+}
+
+.playlist-container,
+.history-container {
+    margin-top: 20px;
+}
+
+.playlist-container h4,
+.history-container h4 {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.playlist,
+.history-list {
+    list-style: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.playlist li,
+.history-list li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-radius: 8px;
+}
+
+.playlist li:hover,
+.history-list li:hover {
+    background: #f8f9fa;
+}
+
+.playlist li.active,
+.history-list li.active {
+    background: #e8eaf6;
+    border-left: 4px solid #667eea;
+}
+
+.song-number,
+.page-number {
+    color: #999;
+    font-size: 0.8rem;
+    min-width: 30px;
+}
+
+.song-name,
+.page-name {
+    flex: 1;
+    color: #333;
+}
+
+.playing-indicator,
+.current-indicator {
+    color: #667eea;
+    font-weight: bold;
+}
+
+.nav-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    color: #666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .player-controls,
+    .browser-controls {
+        flex-direction: column;
+    }
+    
+    .control-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .current-song,
+    .current-page {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* src/styles/pages.css - Agregar al final */
+
+/* ===== TÍTULOS DE PÁGINAS - OSCUROS ===== */
+.page-container h2 {
+    color: #222 !important;  /* Título principal oscuro */
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.page-container h3 {
+    color: #333 !important;  /* Subtítulos oscuros */
+}
+
+.page-container h4 {
+    color: #444 !important;  /* Títulos de listas */
+}
+
+.page-container .page-subtitle {
+    color: #666 !important;  /* Subtítulos grises */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ===== TÍTULOS DE SECCIONES ESPECÍFICAS ===== */
+.music-player h2,
+.browser-history h2 {
+    color: #222 !important;
+}
+
+.music-player h3,
+.browser-history h3 {
+    color: #333 !important;
+}
+
+.music-player h4,
+.browser-history h4 {
+    color: #444 !important;
+}
+
+/* ===== TÍTULOS DE LA CANCIÓN ACTUAL ===== */
+.current-song .song-title {
+    color: #222 !important;  /* Título de la canción */
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.current-song h3 {
+    color: #666 !important;  /* "Reproduciendo ahora" */
+    font-size: 0.9rem;
+}
