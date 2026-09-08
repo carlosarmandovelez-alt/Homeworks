@@ -1,0 +1,183 @@
+.producto-display {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.producto-display.empty {
+    padding: 60px 30px;
+    color: #999;
+}
+
+.producto-indicator {
+    margin-bottom: 20px;
+}
+
+.producto-counter {
+    background: #667eea;
+    color: white;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.producto-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.producto-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-placeholder {
+    font-size: 4rem;
+}
+
+.producto-info {
+    width: 100%;
+}
+
+.producto-name {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.producto-description {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.producto-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.producto-price {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.producto-category {
+    background: #e3f2fd;
+    color: #1565c0;
+    padding: 4px 14px;
+    border-radius: 20px;
+}
+
+.producto-rating {
+    background: #fff3e0;
+    color: #e65100;
+    padding: 4px 14px;
+    border-radius: 20px;
+}
+
+.producto-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.nav-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.prev-btn {
+    background: #e9ecef;
+    color: #333;
+}
+
+.prev-btn:hover {
+    background: #dee2e6;
+    transform: translateX(-3px);
+}
+
+.next-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.next-btn:hover {
+    transform: translateX(3px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.producto-dots {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #667eea;
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+    .producto-card {
+        flex-direction: column;
+    }
+    
+    .producto-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .producto-name {
+        font-size: 1.4rem;
+    }
+    
+    .producto-controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .nav-btn {
+        width: 100%;
+    }
+}
