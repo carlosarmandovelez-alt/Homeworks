@@ -1,0 +1,78 @@
+.history-navigation {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.btn-nav {
+    padding: 6px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-nav:hover:not(:disabled) { background: #5568d3; }
+.btn-nav:disabled { background: #ccc; cursor: not-allowed; }
+
+.history-counter {
+    font-weight: 600;
+    color: #555;
+    min-width: 60px;
+    text-align: center;
+}
+
+.history-current {
+    background: #e8f0fe;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.history-record {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 20px;
+}
+
+.history-field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.field-label {
+    font-weight: 600;
+    color: #666;
+    font-size: 0.85rem;
+    min-width: 80px;
+}
+
+.field-value { color: #333; font-weight: 500; }
+
+.history-diagnosis {
+    background: #eee;
+    padding: 2px 12px;
+    border-radius: 12px;
+    color: #555;
+}
+
+.history-list .list-item { cursor: pointer; }
+.history-list .list-item:hover { background: #f5f5f5; }
+.history-list .list-item.active { background: #e8f0fe; border-left: 3px solid #667eea; }
+
+.history-patient { font-weight: 600; color: #222; }
+.history-doctor { color: #555; font-size: 0.9rem; }
+.history-date { color: #888; font-size: 0.8rem; }
+
+@media (max-width: 600px) {
+    .history-record { grid-template-columns: 1fr; gap: 5px; }
+    .history-navigation { flex-wrap: wrap; }
+}

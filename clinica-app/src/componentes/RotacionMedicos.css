@@ -1,0 +1,40 @@
+.current-doctor {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #e8f0fe;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.doctor-icon { font-size: 2rem; }
+.doctor-info { display: flex; flex-direction: column; }
+.doctor-name { font-weight: 600; color: #222; font-size: 1.1rem; }
+.doctor-specialty { color: #666; font-size: 0.85rem; }
+.doctor-status { margin-left: auto; color: #28a745; font-weight: 500; }
+
+.btn-rotate {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.btn-rotate:hover { background: #5568d3; }
+
+.doctor-item {
+    display: flex;
+    gap: 15px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.doctor-item.active { background: #e8f0fe; border-left: 3px solid #667eea; }

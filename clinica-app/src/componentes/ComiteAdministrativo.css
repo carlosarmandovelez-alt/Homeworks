@@ -1,0 +1,57 @@
+.current-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    background: #e8f0fe;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.current-member .member-role {
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.current-member .member-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.comite-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-comite {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #e9ecef;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-comite:hover { background: #667eea; color: white; }
+
+.member-item {
+    display: flex;
+    gap: 15px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+
+.member-item.active { background: #e8f0fe; border-left: 3px solid #764ba2; }
+
+.member-name { font-weight: 600; color: #222; }
+.member-role { color: #666; font-size: 0.85rem; }
