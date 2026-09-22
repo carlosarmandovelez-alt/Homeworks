@@ -1,0 +1,172 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f5;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.app {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.app-header h1 { color: #333; font-size: 2rem; }
+.app-header .subtitle { color: #888; font-size: 1rem; }
+.app-header .stats { font-size: 0.85rem; color: #667eea; margin-top: 8px; font-weight: 600; }
+
+.grid-2cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 1024px) {
+    .grid-2cols { grid-template-columns: 1fr; }
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* ===== FORMULARIO ===== */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    padding: 10px 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.btn-primary {
+    background: #198800;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.btn-primary:hover { background: #5568d3; }
+
+
+.libro-tope { margin-bottom: 20px; }
+
+.libro-tope h4 {
+    color: #667eea;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.libro-card {
+    background: #e8f0fe;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+}
+
+.libro-info {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.libro-nombre { font-weight: 600; color: #222; font-size: 1.1rem; }
+.libro-autor { color: #666; font-size: 0.9rem; }
+.libro-detalle { color: #555; font-size: 0.9rem; margin-bottom: 5px; }
+
+.btn-attend {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.btn-attend:hover { background: #c82333; }
+
+
+.resto-libros h4 { color: #666; margin-bottom: 10px; font-size: 0.95rem; }
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    border-bottom: 1px solid #eee;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.libro-editorial { color: #888; font-size: 0.85rem; }
+
+
+.empty-message {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+}
+
