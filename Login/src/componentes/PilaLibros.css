@@ -1,0 +1,127 @@
+.pila-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pila-tope-label,
+.pila-base-label {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #94A3B8;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.pila-tope-label {
+    color: #0EA5E9;
+}
+
+.pila-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.pila-libro {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-left: 4px solid #CBD5E1;
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: all 0.2s;
+}
+
+.pila-libro:hover {
+    background: #F1F5F9;
+    transform: translateX(3px);
+}
+
+
+.pila-libro-tope {
+    background: #E0F2FE;
+    border-left-color: #0EA5E9;
+    box-shadow: 0 2px 8px rgba(14, 165, 233, 0.15);
+}
+
+.pila-libro-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.pila-libro-posicion {
+    background: #0EA5E9;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+    min-width: 28px;
+    text-align: center;
+}
+
+.pila-libro-tope .pila-libro-posicion {
+    background: #10B981;
+}
+
+.pila-libro-nombre {
+    font-weight: 600;
+    color: #1E293B;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.pila-libro-detalles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+    padding-left: 38px;
+}
+
+.pila-libro-detalle {
+    font-size: 0.85rem;
+    color: #475569;
+    background: white;
+    padding: 3px 10px;
+    border-radius: 6px;
+    border: 1px solid #E2E8F0;
+}
+
+.pila-libro-tope .pila-libro-detalle {
+    border-color: #BAE6FD;
+}
+
+.pila-libro-badge {
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 38px;
+    background: #10B981;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 10px;
+    letter-spacing: 0.5px;
+}
+
+.pila-lista::-webkit-scrollbar {
+    width: 6px;
+}
+
+.pila-lista::-webkit-scrollbar-track {
+    background: #F1F5F9;
+    border-radius: 3px;
+}
+
+.pila-lista::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 3px;
+}

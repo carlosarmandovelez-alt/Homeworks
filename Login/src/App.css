@@ -1,0 +1,250 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #F8FAFC;
+    min-height: 100vh;
+    color: #1E293B;
+}
+
+.app, .dashboard {
+    min-height: 100vh;
+}
+
+
+.app-header, .dashboard-header {
+    background: white;
+    padding: 20px 30px;
+    border-bottom: 2px solid #E2E8F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.dashboard-brand h1,
+.app-header h1 {
+    color: #1E293B;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.dashboard-user {
+    color: #64748B;
+    font-size: 0.9rem;
+}
+
+.dashboard-user strong {
+    color: #0EA5E9;
+}
+
+
+.dashboard-nav {
+    background: white;
+    padding: 0 30px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #E2E8F0;
+    overflow-x: auto;
+}
+
+.nav-link {
+    padding: 15px 20px;
+    color: #64748B;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.nav-link:hover {
+    color: #0EA5E9;
+    border-bottom-color: #0EA5E9;
+}
+
+
+.dashboard-content {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.btn-primary {
+    background: #0EA5E9;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-primary:hover {
+    background: #0284C7;
+    transform: translateY(-1px);
+}
+
+.btn-attend {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background: #10B981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-attend:hover {
+    background: #059669;
+    transform: translateY(-1px);
+}
+
+.btn-logout {
+    background: #EF4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-logout:hover {
+    background: #DC2626;
+}
+
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #E2E8F0;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    color: #1E293B;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #E2E8F0;
+    padding-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+
+.grid-2cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+    .grid-2cols {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    border-bottom: 1px solid #F1F5F9;
+    gap: 10px;
+    flex-wrap: wrap;
+    transition: background 0.2s;
+}
+
+.list-item:hover {
+    background: #F8FAFC;
+}
+
+
+.empty-message {
+    text-align: center;
+    color: #94A3B8;
+    padding: 30px 20px;
+    font-size: 1rem;
+}
+
+
+.page-subtitle {
+    color: #64748B;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+
+.list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.list::-webkit-scrollbar-track {
+    background: #F1F5F9;
+    border-radius: 3px;
+}
+
+.list::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 3px;
+}
+
+.list::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+}
+
+
+input,
+textarea,
+select {
+    color: #1E293B !important;
+    background: #F8FAFC;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #94A3B8;
+    opacity: 1;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    color: #1E293B !important;
+    background: white;
+}
+
+.page-title {
+    color: #1E293B !important;   
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.page-subtitle {
+    color: #64748B !important;   
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,85 @@
+.persona-actual {
+    margin-bottom: 20px;
+}
+
+.persona-actual h4 {
+    color: #0EA5E9;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.persona-card {
+    background: #E0F2FE;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-left: 4px solid #0EA5E9;
+}
+
+.persona-info {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.persona-nombre {
+    font-weight: 600;
+    color: #1E293B;
+    font-size: 1.1rem;
+}
+
+.persona-fecha {
+    color: #64748B;
+    font-size: 0.85rem;
+}
+
+.persona-monto {
+    color: #334155;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.btn-attend {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background: #10B981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-attend:hover {
+    background: #059669;
+    transform: translateY(-1px);
+}
+
+
+.resto-personas h4 {
+    color: #64748B;
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+.list-item .persona-nombre {
+    flex: 1;
+    font-size: 0.95rem;
+    color: #1E293B;
+    font-weight: 500;
+}
+
+.list-item .persona-fecha {
+    font-size: 0.8rem;
+    color: #94A3B8;
+}
+
+.list-item .persona-monto {
+    font-size: 0.9rem;
+    color: #0EA5E9;
+    font-weight: 600;
+    margin-bottom: 0;
+}
