@@ -1,0 +1,38 @@
+// src/styles/_mixins.scss
+@import 'variables';
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin card {
+    background: $bg-card;
+    border-radius: $radius-lg;
+    padding: $spacing-lg;
+    border: 1px solid $border;
+    box-shadow: $shadow-md;
+}
+
+@mixin button($bg-color: $primary) {
+    background: $bg-color;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: $radius-md;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+        background: $primary-hover;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+}
