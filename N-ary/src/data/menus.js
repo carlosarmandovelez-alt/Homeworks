@@ -1,27 +1,20 @@
 import NodoNario from '../estructura/NodoNario';
 
 export const construirMenu = () => {
-    // ============================================
-    // ÍTEMS DEL NIVEL 1
-    // ============================================
 
-    // ✅ Perfil (sin hijos)
     const perfil = new NodoNario({
         titulo: 'Perfil',
         link: '/perfil',
         componente: 'Perfil'
     });
 
-    // ✅ Mensajes (sin hijos)
+    
     const mensajes = new NodoNario({
         titulo: 'Mensajes',
         link: '/mensajes',
         componente: 'Mensajes'
     });
 
-    // ============================================
-    // SUBMENÚS DE CONFIGURACIÓN (Nivel 2)
-    // ============================================
 
     const cuenta = new NodoNario({
         titulo: 'Cuenta',
@@ -53,7 +46,7 @@ export const construirMenu = () => {
         componente: 'Notificaciones'
     });
 
-    // ✅ Configuración (con 5 hijos)
+    
     const configuracion = new NodoNario({
         titulo: 'Configuración',
         link: '/config',
@@ -65,9 +58,7 @@ export const construirMenu = () => {
     configuracion.agregarHijo(password);
     configuracion.agregarHijo(notificaciones);
 
-    // ============================================
-    // SUBMENÚS DE AYUDA (Nivel 2)
-    // ============================================
+
 
     const faqs = new NodoNario({
         titulo: 'FAQs',
@@ -87,7 +78,7 @@ export const construirMenu = () => {
         componente: 'Status'
     });
 
-    // ✅ Ayuda (con 3 hijos)
+   
     const ayuda = new NodoNario({
         titulo: 'Ayuda',
         link: '/ayuda',
@@ -97,9 +88,7 @@ export const construirMenu = () => {
     ayuda.agregarHijo(ticket);
     ayuda.agregarHijo(status);
 
-    // ============================================
-    // LOGOUT (sin hijos)
-    // ============================================
+
 
     const logout = new NodoNario({
         titulo: 'Cerrar Sesión',
@@ -107,9 +96,7 @@ export const construirMenu = () => {
         componente: 'Logout'
     });
 
-    // ============================================
-    // RAÍZ: Menú Principal
-    // ============================================
+
 
     const raiz = new NodoNario({
         titulo: 'Menú Principal',
