@@ -3,12 +3,11 @@ class ArbolNario {
         this.raiz = null;
     }
 
-    // ✅ Establecer raíz
     setRaiz(nodo) {
         this.raiz = nodo;
     }
 
-    // ✅ DFS (Depth-First Search) - Recursivo
+    //  DFS (Depth-First Search) - Recursivo
     dfs(nodo = this.raiz, resultado = []) {
         if (!nodo) return resultado;
 
@@ -20,7 +19,7 @@ class ArbolNario {
         return resultado;
     }
 
-    // ✅ BFS (Breadth-First Search) - Por niveles
+    // BFS (Breadth-First Search) - Por niveles
     bfs(raiz = this.raiz) {
         if (!raiz) return [];
 
@@ -39,7 +38,7 @@ class ArbolNario {
         return resultado;
     }
 
-    // ✅ Buscar por título
+  
     buscarPorTitulo(titulo, nodo = this.raiz) {
         if (!nodo) return null;
         if (nodo.valor.titulo === titulo) return nodo;
