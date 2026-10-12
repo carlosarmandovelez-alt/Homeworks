@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #0F0F0F;
+    color: #F5F5F5;
+    min-height: 100vh;
+}
+
+
+.app-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+
+
+.main-header {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 8px;
+        color: #F5F5F5;
+    }
+
+    .subtitle {
+        color: #A3A3A3;
+        font-size: 0.95rem;
+    }
+}
+
+
+.info-section {
+    background: #1E1E1E;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+
+    h2 {
+        color: #10B981;
+        font-size: 1.2rem;
+        margin-bottom: 16px;
+    }
+
+    p {
+        color: #A3A3A3;
+        line-height: 1.6;
+        margin-bottom: 12px;
+
+        strong {
+            color: #F5F5F5;
+        }
+    }
+
+    ul {
+        margin-left: 20px;
+        margin-bottom: 16px;
+
+        li {
+            color: #A3A3A3;
+            line-height: 1.8;
+
+            strong {
+                color: #10B981;
+            }
+        }
+    }
+}
+
+
+.seleccionado-section {
+    border-color: #10B981;
+    background: rgba(16, 185, 129, 0.05);
+}
+
+.seleccionado-card {
+    background: #252525;
+    border-left: 4px solid #10B981;
+    padding: 16px;
+    border-radius: 8px;
+
+    p {
+        margin: 8px 0;
+
+        strong {
+            color: #10B981;
+            margin-right: 8px;
+        }
+    }
+}
+
+
+.recorrido {
+    background: #252525;
+    border-left: 4px solid #10B981;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+
+    h3 {
+        color: #F5F5F5;
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .valores {
+        color: #10B981;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin: 0;
+        word-break: break-word;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .app-layout {
+        flex-direction: column;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+}
