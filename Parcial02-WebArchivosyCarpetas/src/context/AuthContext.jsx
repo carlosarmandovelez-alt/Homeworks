@@ -50,7 +50,7 @@ export function AuthProvider({ children }) {
       const cred = await createUserWithEmailAndPassword(auth, email, password);
       const displayName = `${nombre.trim()} ${apellido.trim()}`;
       await updateProfile(cred.user, { displayName });
-      // updateProfile no dispara onAuthStateChanged, actualizamos a mano
+      
       setNombreCompleto(displayName);
     } catch (e) {
       throw traducir(e);
