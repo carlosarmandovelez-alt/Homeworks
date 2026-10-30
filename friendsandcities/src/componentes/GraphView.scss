@@ -1,0 +1,22 @@
+.graph-view {
+    width: 100%;
+    height: 600px;
+    background: #1E1E1E;
+    border-radius: 12px;
+    border: 1px solid #333;
+    overflow: hidden;
+    position: relative;
+
+    canvas {
+        display: block;
+    }
+}
+
+.empty-graph {
+    text-align: center;
+    color: #A3A3A3;
+    padding: 40px;
+    background: #1E1E1E;
+    border-radius: 12px;
+    border: 1px solid #333;
+}
