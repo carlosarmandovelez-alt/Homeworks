@@ -1,0 +1,227 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: #121212; 
+    color: #FFFFFF;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.app {
+    max-width: 1100px; 
+    margin: 0 auto;
+}
+
+
+.app-header {
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #333333;
+
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 8px;
+        color: #F5C518; 
+        font-weight: 700;
+        letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+        color: #AAAAAA;
+        font-size: 1rem;
+    }
+}
+
+
+.app-main {
+    display: grid;
+    grid-template-columns: 350px 1fr; 
+    gap: 30px;
+    align-items: start;
+}
+
+@media (max-width: 768px) {
+    .app-main {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.search-panel {
+    background: #1F1F1F;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 24px;
+
+    h2 {
+        font-size: 1.1rem;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+}
+
+.input-group {
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    label {
+        display: block;
+        color: #AAAAAA;
+        font-size: 0.85rem;
+        font-weight: 500;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    input {
+        width: 100%;
+        padding: 14px 16px;
+        background: #2C2C2C;
+        border: 1px solid #444444;
+        border-radius: 8px;
+        color: #FFFFFF;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        transition: all 0.2s;
+
+        &::placeholder {
+            color: #777777;
+        }
+
+        &:focus {
+            outline: none;
+            background: #333333;
+            border-color: #F5C518; 
+        }
+    }
+}
+
+
+.info-panel {
+    background: #1F1F1F;
+    border-radius: 8px;
+    padding: 24px;
+    border: 1px solid #333333;
+
+    h3 {
+        color: #F5C518;
+        margin-bottom: 16px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            color: #AAAAAA;
+            padding: 10px 0;
+            line-height: 1.6;
+            border-bottom: 1px solid #333333;
+            font-size: 0.9rem;
+
+            &:last-child {
+                border-bottom: none;
+                padding-bottom: 0;
+            }
+
+            strong {
+                color: #FFFFFF;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+
+.results-panel {
+    background: #1F1F1F;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    padding: 24px;
+    min-height: 400px;
+
+    h2 {
+        color: #FFFFFF;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        font-weight: 500;
+        border-bottom: 1px solid #333333;
+        padding-bottom: 12px;
+    }
+}
+
+.results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.result-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    background: #2C2C2C;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 4px solid #F5C518; 
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: translateX(5px);
+        background: #333333;
+    }
+
+    .rank {
+        font-weight: 700;
+        color: #F5C518;
+        font-size: 1.1rem;
+        min-width: 40px;
+    }
+
+    .product-name {
+        flex: 1;
+        color: #FFFFFF;
+        font-weight: 500;
+    }
+
+    .product-popularity {
+        color: #121212;
+        font-weight: 700;
+        font-size: 0.9rem;
+        background: #F5C518;
+        padding: 4px 12px;
+        border-radius: 4px;
+    }
+}
+
+
+.empty-message {
+    text-align: center;
+    color: #AAAAAA;
+    padding: 40px;
+    font-size: 1rem;
+    border: 1px dashed #444444;
+    border-radius: 8px;
+}
