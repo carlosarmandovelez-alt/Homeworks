@@ -1,0 +1,48 @@
+export const initialSongs = [
+    { id: 1, title: "Runaway", artist: "Kanye West", popularity: 98 },
+    { id: 2, title: "Ultraviolence", artist: "Lana Del Rey", popularity: 95 },
+    { id: 3, title: "Levitating", artist: "Dua Lipa", popularity: 92 },
+    { id: 4, title: "Save Your Tears", artist: "The Weeknd", popularity: 80 },
+    { id: 5, title: "Happier", artist: "Olivia Rodrigo", popularity: 87 },
+    { id: 6, title: "100 Grandkids", artist: "Mac Miller", popularity: 85 },
+    { id: 7, title: "Good 4 U", artist: "Olivia Rodrigo", popularity: 84 },
+    { id: 8, title: "Congratulations", artist: "Mac Miller", popularity: 83 },
+    { id: 9, title: "Time", artist: "Pink Floyd", popularity: 82 },
+    { id: 10, title: "Les", artist: "Childish Gambino", popularity: 81 },
+    { id: 11, title: "Father to Son", artist: "Queen", popularity: 80 },
+    { id: 12, title: "Black", artist: "Pearl Jam", popularity: 79 },
+    { id: 13, title: "Dealer", artist: "Lana Del Rey", popularity: 78 },
+    { id: 14, title: "My Way", artist: "Frank Sinatra", popularity: 78 },
+    { id: 15, title: "One", artist: "Aimee Mann", popularity: 77 },
+    { id: 16, title: "Ghost Town", artist: "Kanye West", popularity: 77 },
+    { id: 17, title: "Benz Truck", artist: "Lil Peep", popularity: 76 },
+    { id: 18, title: "Yeah", artist: "Mac Miller", popularity: 76 },
+    { id: 19, title: "Juna", artist: "Clairo", popularity: 76 },
+    { id: 20, title: "Wise Up", artist: "Aimee Mann", popularity: 75 },
+    { id: 21, title: "Cinderella", artist: "Mac Miller", popularity: 75 },
+    { id: 22, title: "Money Trees", artist: "Kendrick Lamar", popularity: 75 },
+    { id: 23, title: "Do I Wanna Know?", artist: "Arctic Monkeys", popularity: 75 },
+    { id: 24, title: "Sienna", artist: "The Marías", popularity: 75 },
+    { id: 25, title: "Save Me", artist: "Aimee Mann", popularity: 75 },
+    { id: 26, title: "American Wedding", artist: "Frank Ocean", popularity: 75 },
+    { id: 27, title: "Can't Tell Me Nothing", artist: "Kanye West", popularity: 75 },
+    { id: 28, title: "Dunno", artist: "Mac Miller", popularity: 75 },
+    { id: 29, title: "Traitor", artist: "Olivia Rodrigo", popularity: 75 },
+    { id: 30, title: "Pretty When You Cry", artist: "Lana Del Rey", popularity: 75 }
+];
+
+export const initialRelations = [
+
+    [1, 16], [1, 27], [16, 27],
+    [2, 13], [2, 30], [13, 30],
+    [5, 7], [5, 29], [7, 29],
+    [6, 8], [6, 18], [6, 21], [6, 28],
+    [8, 18], [8, 21], [8, 28],
+    [18, 21], [18, 28], [21, 28],
+    [15, 20], [15, 25], [20, 25],
+    [3, 5], [3, 4], [4, 5],
+    [10, 22], [17, 22],
+    [19, 24], [19, 26], [23, 24], [26, 30],
+    [9, 11], [11, 12], [9, 12],
+    [1, 22], [4, 27], [14, 15], [14, 20]
+];
